@@ -1,0 +1,11 @@
+.menu {
+  color: #8998a0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dateTime {
+  font-size: 16px;
+}

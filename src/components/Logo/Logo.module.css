@@ -1,0 +1,9 @@
+.logo {
+  display: flex;
+}
+
+.logoText {
+  margin-left: 10px;
+  color: #6ca435;
+  text-transform: uppercase;
+}
