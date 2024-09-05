@@ -1,13 +1,20 @@
-import Header from "./components/Header/Header";
+import { Suspense } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+
+import Layout from "./components/Layout/Layout";
 import NavigationMenu from "./components/NavigationMenu/NavigationMenu";
-import "./App.css";
 
 function App() {
   return (
-    <>
-      <Header />
-      <NavigationMenu />
-    </>
+    <Suspense fallback={"Loading..."}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<NavigationMenu />} />
+          <Route path="/*" element={<NavigationMenu />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 

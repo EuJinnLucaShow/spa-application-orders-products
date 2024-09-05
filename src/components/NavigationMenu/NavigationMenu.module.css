@@ -3,14 +3,34 @@
 }
 
 .wrapperNavMenu {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
   height: 100vh;
-  background-color: antiquewhite;
+  background-color: #f1f2f3;
 }
 
 .avatar {
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+  margin-top: 20px;
+}
+
+.navMenu {
+  margin-top: 20px;
+}
+
+.navList li {
+  margin-bottom: 15px;
+}
+
+a li:hover {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+.wrapperContent {
+  width: 100%;
 }
