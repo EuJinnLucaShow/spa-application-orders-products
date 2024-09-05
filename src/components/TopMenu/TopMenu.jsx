@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import clock from "../../assets/clock.png";
 import styles from "./TopMenu.module.css";
 
 const daysOfWeek = [
@@ -24,10 +25,15 @@ export default function TopMenu() {
 
   const dayOfWeek = daysOfWeek[dateTime.getDay()];
   const formattedDate = dateTime.toLocaleDateString("uk-UA", {
-    year: "numeric",
     month: "short",
     day: "numeric",
   });
+
+  const capitalizedDate = formattedDate.replace(/(^|\s)(\S)/g, (match) =>
+    match.toUpperCase()
+  );
+
+  const year = dateTime.getFullYear();
 
   const formattedTime = dateTime.toLocaleTimeString("uk-UA", {
     hour: "2-digit",
@@ -37,7 +43,10 @@ export default function TopMenu() {
   return (
     <div className={styles.menu}>
       <div className={styles.dateTime}>
-        {dayOfWeek}, {formattedDate} {formattedTime}
+        <div>{dayOfWeek}</div>
+        {capitalizedDate} {year}{" "}
+        <img src={clock} className={styles.clock} alt="image clock" />
+        {formattedTime}
       </div>
     </div>
   );
