@@ -1,3 +1,3 @@
 export default function Groups() {
-  return <div>Products Component</div>;
+  return <div>Groups Component</div>;
 }
