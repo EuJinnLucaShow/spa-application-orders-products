@@ -3,21 +3,21 @@ import styles from "./NavigationMenu.module.css";
 import { useState, useEffect } from "react";
 import portret from "../../assets/portrait.jpg";
 
-import Arrival from "../../pages/Arrival/Arrival";
+import Incoming from "../../pages/Incoming/Incoming";
 import Groups from "../../pages/Groups/Groups";
 import Products from "../../pages/Products/Products";
 import Users from "../../pages/Users/Users";
 import Settings from "../../pages/Settings/Settings";
 
 const componentsMap = {
-  Arrival,
+  Incoming,
   Groups,
   Products,
   Users,
   Settings,
 };
 
-const navList = ["Arrival", "Groups", "Products", "Users", "Settings"];
+const navList = ["Incoming", "Groups", "Products", "Users", "Settings"];
 
 export default function NavigationMenu() {
   const location = useLocation();
@@ -64,7 +64,7 @@ export default function NavigationMenu() {
                   onClick={() => setSelectedComponent(tabId)}
                 >
                   {({ isActive }) => (
-                    <li                     
+                    <li
                       style={{
                         textDecorationLine: isActive ? "underline" : "",
                         textDecorationColor: isActive ? "green" : "",
