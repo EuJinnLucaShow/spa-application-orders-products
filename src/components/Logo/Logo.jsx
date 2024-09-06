@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <div className={styles.wrapper}>
       <img src={UserShield} className={styles.logoImg} alt="User Shield" />
-      <p className={styles.logoText}>invertory</p>
+      <p className={styles.logoText}>inventory</p>
     </div>
   );
 }

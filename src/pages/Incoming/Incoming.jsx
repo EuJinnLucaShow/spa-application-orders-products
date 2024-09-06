@@ -4,8 +4,10 @@ import Orders from "../../components/Orders/Orders";
 export default function Incoming() {
   return (
     <div className={styles.wrapper}>
-      <button>+</button>
-      <h3>Incoming / 24</h3>
+      <div>
+        <button>+</button>
+        <h3>Incoming / 25</h3>
+      </div>
       <Orders />
     </div>
   );

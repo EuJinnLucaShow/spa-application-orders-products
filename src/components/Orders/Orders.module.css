@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  border: solid;
+  border-radius: 5px;
+  border-color: lightgrey;
+}
+
+.menupng {
+  width: 20px;
+}
+
+.menubtn {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px;
+  border: solid;
+  border-color: lightgray;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.orderName {
+  margin-left: 10px;
+  width: 400px;
+}
+
+.trashIcon {
+  width: 15px;
+}
+
+.trashBtn {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.quantity {
+  margin-left: 10px;
+}
