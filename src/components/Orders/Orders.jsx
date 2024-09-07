@@ -3,14 +3,15 @@ import PropTypes from "prop-types";
 import burgermenu from "../../assets/menu.svg";
 import trashIcon from "../../assets/trash.svg";
 import styles from "./Orders.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Orders({ order }) {
   return (
     <li className={styles.orderItem}>
       <p className={styles.orderName}>{order.title}</p>
-      <button className={styles.menubtn}>
+      <NavLink className={styles.menubtn} to={"/groups"}>
         <img src={burgermenu} className={styles.menuIcon} alt="menu" />
-      </button>
+      </NavLink>
 
       <div className={styles.orderItemQuantity}>
         <span>{order.products.length}</span>
