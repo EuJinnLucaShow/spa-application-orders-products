@@ -48,5 +48,6 @@
 }
 
 .orderPrice {
+  width: 100px;
   margin-left: 80px;
 }

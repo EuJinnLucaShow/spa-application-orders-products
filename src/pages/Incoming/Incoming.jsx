@@ -1,5 +1,6 @@
 import Orders from "../../components/Orders/Orders";
 import iconBtn from "../../assets/plus.svg";
+import orders from "../../db/orders.json";
 
 import styles from "./Incoming.module.css";
 
@@ -14,7 +15,11 @@ export default function Incoming() {
           Incoming / <span>25</span>
         </h3>
       </div>
-      <Orders />
+      <ul>
+        {orders.map((order, index) => (
+          <Orders key={index} order={order} />
+        ))}
+      </ul>
     </div>
   );
 }
