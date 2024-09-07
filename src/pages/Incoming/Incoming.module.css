@@ -2,4 +2,28 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.titleBox {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid;
+  background-color: #8bc34a;
+  border-color: #80b34a;
+}
+
+.iconBtn {
+  width: 25px;
+}
+
+.title {
+  margin-left: 30px;
 }

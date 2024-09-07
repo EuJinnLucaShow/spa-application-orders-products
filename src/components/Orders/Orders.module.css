@@ -4,6 +4,7 @@
   border: solid;
   border-radius: 5px;
   border-color: lightgrey;
+  padding: 5px 20px;
 }
 
 .menupng {
@@ -22,11 +23,12 @@
 }
 
 .orderName {
-  margin-left: 10px;
-  width: 400px;
+  text-decoration-line: underline;
+  width: 600px;
 }
 
 .trashIcon {
+  margin-left: 80px;
   width: 15px;
 }
 
@@ -38,5 +40,13 @@
 }
 
 .quantity {
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.date {
+  margin-left: 40px;
+}
+
+.price {
+  margin-left: 80px;
 }
