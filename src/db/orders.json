@@ -13,7 +13,7 @@
         "isNew": 1,
         "photo": "pathToFile jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Video cards for a computer",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -32,7 +32,7 @@
         "isNew": 1,
         "photo": "pathToFile.jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Video cards for a computer",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -61,7 +61,7 @@
         "isNew": 1,
         "photo": "pathToFile jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Motherboards",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -80,7 +80,7 @@
         "isNew": 1,
         "photo": "pathToFile.jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Motherboards",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -109,7 +109,7 @@
         "isNew": 1,
         "photo": "pathToFile jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "RAM for a laptop",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -128,7 +128,7 @@
         "isNew": 1,
         "photo": "pathToFile.jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "RAM for a laptop",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -157,7 +157,7 @@
         "isNew": 1,
         "photo": "pathToFile jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Power supplies for PCs",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -176,7 +176,7 @@
         "isNew": 1,
         "photo": "pathToFile.jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Power supplies for PCs",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -205,7 +205,7 @@
         "isNew": 1,
         "photo": "pathToFile jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Hard drives (HDD)",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
@@ -224,7 +224,7 @@
         "isNew": 1,
         "photo": "pathToFile.jpg",
         "title": "Product 1",
-        "type": "Monitors",
+        "type": "Hard drives (HDD)",
         "specification": "Specification 1",
         "guarantee": {
           "start": "2017-06-29 12:09:33",
