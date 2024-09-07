@@ -12,7 +12,7 @@ export default function Incoming() {
           <img src={iconBtn} className={styles.iconBtn} alt="add button" />
         </button>
         <h3 className={styles.title}>
-          Incoming / <span>25</span>
+          Incoming / <span>{orders.length}</span>
         </h3>
       </div>
       <ul className={styles.ordersList}>

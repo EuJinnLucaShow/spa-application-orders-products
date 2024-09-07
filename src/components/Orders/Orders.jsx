@@ -13,7 +13,7 @@ export default function Orders({ order }) {
       </button>
 
       <div className={styles.orderItemQuantity}>
-        <span>23</span>
+        <span>{order.products.length}</span>
         <p>orders</p>
       </div>
       <div className={styles.orderDate}>
@@ -37,5 +37,6 @@ Orders.propTypes = {
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     symbol: PropTypes.string,
+    products: PropTypes.array,
   }).isRequired,
 };
