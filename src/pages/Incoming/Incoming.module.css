@@ -27,3 +27,7 @@
 .title {
   margin-left: 30px;
 }
+
+.ordersList li:not(:last-child) {
+  margin-bottom: 10px;
+}

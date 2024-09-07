@@ -15,7 +15,7 @@ export default function Incoming() {
           Incoming / <span>25</span>
         </h3>
       </div>
-      <ul>
+      <ul className={styles.ordersList}>
         {orders.map((order, index) => (
           <Orders key={index} order={order} />
         ))}
