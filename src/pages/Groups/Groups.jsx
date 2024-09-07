@@ -1,3 +1,7 @@
+import { useLocation } from "react-router-dom";
+
 export default function Groups() {
-  return <div>Groups Component</div>;
+  let { state } = useLocation();
+
+  return <div>Groups Component {state.length}</div>;
 }

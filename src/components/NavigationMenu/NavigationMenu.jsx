@@ -62,6 +62,7 @@ export default function NavigationMenu() {
                   key={tabId}
                   className={selectedComponent === tabId ? styles.active : ""}
                   onClick={() => setSelectedComponent(tabId)}
+                  state={[]}
                 >
                   {({ isActive }) => (
                     <li

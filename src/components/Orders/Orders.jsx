@@ -9,7 +9,7 @@ export default function Orders({ order }) {
   return (
     <li className={styles.orderItem}>
       <p className={styles.orderName}>{order.title}</p>
-      <NavLink className={styles.menubtn} to={"/groups"}>
+      <NavLink className={styles.menubtn} to={"/groups"} state={order.products}>
         <img src={burgermenu} className={styles.menuIcon} alt="menu" />
       </NavLink>
 
