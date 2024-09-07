@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "title": "Order 1",
+    "title": "Computer equipment and components for PCs: Video cards for a computer",
     "date": "2017-06-29 12:09:33",
     "description": "desc",
     "price": 250000,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Order 2",
+    "title": "Computer equipment and components for PCs: Motherboards",
     "date": "2017-06-29 12:09:33",
     "description": "desc",
     "price": 80000,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "title": "Order 3",
+    "title": "Computer equipment and components for PCs: RAM for a laptop",
     "date": "2017-06-29 12:09:33",
     "description": "desc",
     "price": 140000,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "title": "Order 4",
+    "title": "Computer equipment and components for PCs: Power supplies for PCs",
     "date": "2017-06-29 12:09:33",
     "description": "desc",
     "price": 70000,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "title": "Order 5",
+    "title": "Computer equipment and components for PCs: Hard drives (HDD)",
     "date": "2017-06-29 12:09:33",
     "description": "desc",
     "price": 90000,
