@@ -4,21 +4,21 @@ import styles from "./Orders.module.css";
 
 export default function Orders() {
   return (
-    <li className={styles.wrapper}>
+    <li className={styles.orderItem}>
       <p className={styles.orderName}>Orders</p>
       <button className={styles.menubtn}>
-        <img src={burgermenu} className={styles.menupng} alt="menu" />
+        <img src={burgermenu} className={styles.menuIcon} alt="menu" />
       </button>
 
-      <div className={styles.quantity}>
+      <div className={styles.orderItemQuantity}>
         <span>23</span>
         <p>Orders</p>
       </div>
-      <div className={styles.date}>
+      <div className={styles.orderDate}>
         <p>01 / 12</p>
         <p>06 / Apr / 2017</p>
       </div>
-      <div className={styles.price}>
+      <div className={styles.orderPrice}>
         <p>250000 UAH</p>
       </div>
       <button className={styles.trashBtn}>

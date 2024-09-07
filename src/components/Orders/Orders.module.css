@@ -1,4 +1,4 @@
-.wrapper {
+.orderItem {
   display: flex;
   align-items: center;
   border: solid;
@@ -7,7 +7,7 @@
   padding: 5px 20px;
 }
 
-.menupng {
+.menuIcon {
   width: 20px;
 }
 
@@ -39,14 +39,14 @@
   background-color: transparent;
 }
 
-.quantity {
+.orderItemQuantity {
   margin-left: 20px;
 }
 
-.date {
+.orderDate {
   margin-left: 40px;
 }
 
-.price {
+.orderPrice {
   margin-left: 80px;
 }
