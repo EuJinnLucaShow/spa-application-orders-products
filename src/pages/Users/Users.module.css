@@ -1,0 +1,11 @@
+.userPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.usersImage {
+  width: 400px;
+  margin-top: 30px;
+}
