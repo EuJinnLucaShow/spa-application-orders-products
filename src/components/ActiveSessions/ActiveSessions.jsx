@@ -20,8 +20,8 @@ export default function ActiveSessions() {
   }, []);
 
   return (
-    <h3>
+    <h5>
       Active Sessions: <span>{activeSessions}</span>
-    </h3>
+    </h5>
   );
 }
