@@ -5,7 +5,7 @@ export default function ActiveSessions() {
   const [activeSessions, setActiveSessions] = useState(0);
 
   useEffect(() => {
-      const socket = io("http://localhost:3000/", {
+    const socket = io("https://orders-products-backend.vercel.app/", {
       transports: ["websocket", "polling"],
       withCredentials: true,
     });
