@@ -5,7 +5,10 @@ export default function ActiveSessions() {
   const [activeSessions, setActiveSessions] = useState(0);
 
   useEffect(() => {
-    const socket = io("https://orders-products-backend.vercel.app/");
+    const socket = io("https://orders-products-backend.vercel.app", {
+      transports: ["websocket"], 
+      withCredentials: true, 
+    });
 
     socket.on("sessionUpdate", (count) => {
       setActiveSessions(count);
