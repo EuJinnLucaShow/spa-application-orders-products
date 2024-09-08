@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import clock from "../../assets/clock.png";
 import styles from "./TopMenu.module.css";
+import ActiveSessions from "../ActiveSessions/ActiveSessions";
 
 const daysOfWeek = [
   "Неділя",
@@ -48,6 +49,7 @@ export default function TopMenu() {
         <img src={clock} className={styles.clock} alt="image clock" />
         {formattedTime}
       </div>
+      <ActiveSessions />
     </div>
   );
 }

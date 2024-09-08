@@ -1,4 +1,3 @@
-import ActiveSessions from "../ActiveSessions/ActiveSessions";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import TopMenu from "../TopMenu/TopMenu";
@@ -12,7 +11,6 @@ export default function Header() {
         <Logo />
         <Search />
         <TopMenu />
-        <ActiveSessions />
       </header>
     </div>
   );

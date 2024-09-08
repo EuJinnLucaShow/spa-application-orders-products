@@ -6,7 +6,6 @@ export default function ActiveSessions() {
 
   useEffect(() => {
     const socket = io("https://orders-products-backend.onrender.com", {
-      transports: ["websocket", "polling"],
       withCredentials: true,
     });
 
