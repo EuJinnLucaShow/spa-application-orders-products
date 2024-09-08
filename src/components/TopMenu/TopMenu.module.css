@@ -2,8 +2,7 @@
   color: #8998a0;
   padding: 10px 20px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .dateTime {
