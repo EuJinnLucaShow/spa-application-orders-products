@@ -6,8 +6,8 @@ export default function ActiveSessions() {
 
   useEffect(() => {
     const socket = io("https://orders-products-backend.vercel.app", {
-      transports: ["websocket"], 
-      withCredentials: true, 
+      transports: ["websocket", "polling"],
+      withCredentials: true,
     });
 
     socket.on("sessionUpdate", (count) => {
