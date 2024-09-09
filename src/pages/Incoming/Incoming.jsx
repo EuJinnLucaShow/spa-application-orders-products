@@ -15,10 +15,13 @@ export default function Incoming() {
   useEffect(() => {
     toast.promise(dispatch(fetchOrders()), {
       pending: "Orders list is pending",
-      success: "Orders list received 👌",
+      success:
+        orders.length === 0
+          ? "Orders list empty 😒"
+          : "Orders list received 👌",
       error: "Orders list failed 🤯",
     });
-  }, [dispatch]);
+  }, [dispatch, orders.length]);
 
   return (
     <div className={styles.wrapper}>

@@ -12,7 +12,7 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  width: 480px;
+  width: 580px;
   padding-top: 20px;
   background-color: white;
   border-radius: 5px;
@@ -35,8 +35,9 @@
 
 .contentModal {
   margin-top: 28px;
+  padding: 15px;
   height: 30px;
-  background-color: antiquewhite;
+  border-top: 1px solid #a5b5bc;
 }
 
 .titleModal {
@@ -48,8 +49,36 @@
 }
 
 .btnSectionModal {
-  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 24px;
   background-color: #84bb46;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.cancelBtn {
+  border: none;
+  padding: 14px;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.deleteBtn {
+  display: flex;
+  gap: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #e94b61;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.deleteTrashIcon {
+  width: 15px;
 }

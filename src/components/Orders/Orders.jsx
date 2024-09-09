@@ -42,7 +42,11 @@ export default function Orders({ order }) {
           />
         </button>
       </li>
-      <Modal isOpen={ModalOpen} onClose={() => setModalOpen(false)} />
+      <Modal
+        isOpen={ModalOpen}
+        onClose={() => setModalOpen(false)}
+        order={order}
+      />
     </>
   );
 }
