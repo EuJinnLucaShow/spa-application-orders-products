@@ -1,10 +1,25 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
+
+import { selectOrders } from "../../redux/selectors";
+import { fetchOrders } from "../../redux/operations";
 import Orders from "../../components/Orders/Orders";
 import iconBtn from "../../assets/plus.svg";
-import orders from "../../db/orders.json";
-
 import styles from "./Incoming.module.css";
 
 export default function Incoming() {
+  const dispatch = useDispatch();
+  const orders = useSelector(selectOrders);
+
+  useEffect(() => {
+    toast.promise(dispatch(fetchOrders()), {
+      pending: "Orders List is pending",
+      success: "Orders List resolved 👌",
+      error: "Orders List rejected 🤯",
+    });
+  }, [dispatch]);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.titleBox}>
