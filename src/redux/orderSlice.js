@@ -27,7 +27,7 @@ const ordersSlice = createSlice({
       .addCase(fetchOrders.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.todos = action.payload;
+        state.orders = action.payload;
       })
       .addCase(deleteOrder.pending, (state) => {
         state.isLoading = true;
@@ -39,8 +39,8 @@ const ordersSlice = createSlice({
       .addCase(deleteOrder.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.todos = state.todos.filter(
-          (todo) => todo._id !== action.payload._id
+        state.orders = state.orders.filter(
+          (order) => order._id !== action.payload._id
         );
       })  
   },
