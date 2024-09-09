@@ -12,6 +12,8 @@ export default function Incoming() {
   const dispatch = useDispatch();
   const orders = useSelector(selectOrders);
 
+  console.log(orders);
+
   useEffect(() => {
     toast.promise(dispatch(fetchOrders()), {
       pending: "Orders List is pending",
