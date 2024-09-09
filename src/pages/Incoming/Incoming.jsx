@@ -12,13 +12,11 @@ export default function Incoming() {
   const dispatch = useDispatch();
   const orders = useSelector(selectOrders);
 
-  console.log(orders);
-
   useEffect(() => {
     toast.promise(dispatch(fetchOrders()), {
-      pending: "Orders List is pending",
-      success: "Orders List resolved 👌",
-      error: "Orders List rejected 🤯",
+      pending: "Orders list is pending",
+      success: "Orders list received 👌",
+      error: "Orders list failed 🤯",
     });
   }, [dispatch]);
 
