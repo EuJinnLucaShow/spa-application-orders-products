@@ -13,9 +13,43 @@
   top: 40%;
   left: 50%;
   width: 480px;
-  padding: 24px;
+  padding-top: 20px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transform: translate(-50%, -50%);
+}
+
+.closeBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  padding: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contentModal {
+  margin-top: 28px;
+  height: 30px;
+  background-color: antiquewhite;
+}
+
+.titleModal {
+  margin-left: 24px;
+}
+
+.closeIcon {
+  width: 15px;
+}
+
+.btnSectionModal {
+  height: 70px;
+  background-color: #84bb46;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

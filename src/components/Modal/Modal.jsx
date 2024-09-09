@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
+
+import closeIcon from "../../assets/close.svg";
 import styles from "./Modal.module.css";
 
 export default function Modal({ isOpen, onClose }) {
@@ -27,7 +29,15 @@ export default function Modal({ isOpen, onClose }) {
   return (
     <div className={styles.overlay}>
       <div className={styles.modal}>
-        <button onClick={onClose}>x</button>
+        <button onClick={onClose} className={styles.closeBtn}>
+          <img src={closeIcon} className={styles.closeIcon} alt="close icon" />
+        </button>
+
+        <h4 className={styles.titleModal}>
+          Are you sure you want to delete this product?
+        </h4>
+        <div className={styles.contentModal}></div>
+        <div className={styles.btnSectionModal}></div>
       </div>
     </div>
   );
