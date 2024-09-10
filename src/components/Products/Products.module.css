@@ -1,0 +1,11 @@
+.productItem {
+  display: flex;
+  align-items: center;
+}
+
+.pointProduct {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e8efa6;
+}

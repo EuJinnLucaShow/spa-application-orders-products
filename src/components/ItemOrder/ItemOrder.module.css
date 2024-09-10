@@ -1,0 +1,69 @@
+.orderItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: solid;
+  border-radius: 5px;
+  border-color: lightgrey;
+  padding: 5px 100px 5px 20px;
+}
+
+.menuIcon {
+  width: 20px;
+}
+
+.menubtn {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px;
+  border: solid;
+  border-color: lightgray;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.orderName {
+  text-decoration-line: underline;
+  width: 600px;
+}
+
+.trashIcon {
+  margin-left: 80px;
+  width: 15px;
+}
+
+.trashBtn {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.orderItemQuantity {
+  margin-left: 20px;
+}
+
+.orderDate {
+  margin-left: 40px;
+}
+
+.orderPrice {
+  width: 100px;
+  margin-left: 80px;
+}
+
+.greaterThan {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 40px;
+  background-color: #c2c5c6;
+}
+
+.greaterThanIcon {
+  width: 15px;
+}

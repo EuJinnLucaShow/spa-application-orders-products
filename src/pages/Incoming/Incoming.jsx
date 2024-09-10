@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
@@ -7,10 +7,14 @@ import { fetchOrders } from "../../redux/operations";
 import Orders from "../../components/Orders/Orders";
 import iconBtn from "../../assets/plus.svg";
 import styles from "./Incoming.module.css";
+import ListProducts from "../../components/ListProducts/ListProducts";
 
 export default function Incoming() {
   const dispatch = useDispatch();
   const orders = useSelector(selectOrders);
+  const [openProducts, setOpenProducts] = useState(true);
+  const [date, setDate] = useState([]);
+  const [activeItem, setActiveItem] = useState('');
 
   useEffect(() => {
     toast.promise(dispatch(fetchOrders()), {
@@ -33,11 +37,26 @@ export default function Incoming() {
           Incoming / <span>{orders.length}</span>
         </h3>
       </div>
-      <ul className={styles.ordersList}>
-        {orders.map((order, index) => (
-          <Orders key={index} order={order} />
-        ))}
-      </ul>
+      {openProducts ? (
+        <ul className={styles.ordersList}>
+          {orders.map((order, index) => (
+            <Orders
+              key={index}
+              order={order}
+              openProduct={() => setOpenProducts(false)}
+              optionProducts={(products) => setDate(products)}
+              isActive={(id) => setActiveItem(id)}
+            />
+          ))}
+        </ul>
+      ) : (
+        <ListProducts
+          orders={orders}
+          openProduct={() => setOpenProducts(true)}
+          date={date}
+          activeItem={activeItem}
+        />
+      )}
     </div>
   );
 }

@@ -2,24 +2,26 @@ import PropTypes from "prop-types";
 import burgermenu from "../../assets/menu.svg";
 import trashIcon from "../../assets/trash.svg";
 import styles from "./Orders.module.css";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 
-export default function Orders({ order }) {
+export default function Orders({ order, openProduct, optionProducts, isActive }) {
   const [ModalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <li className={styles.orderItem}>
         <p className={styles.orderName}>{order.title}</p>
-        <NavLink
+        <button
           className={styles.menubtn}
-          to={"/groups"}
-          state={order.products}
+          onClick={() => {
+            openProduct();
+            optionProducts(order.products);
+            isActive(order._id);
+          }}
         >
           <img src={burgermenu} className={styles.menuIcon} alt="menu" />
-        </NavLink>
+        </button>
 
         <div className={styles.orderItemQuantity}>
           <span>{order.products.length}</span>
@@ -52,7 +54,11 @@ export default function Orders({ order }) {
 }
 
 Orders.propTypes = {
+  isActive: PropTypes.func.isRequired,
+  optionProducts: PropTypes.func.isRequired,
+  openProduct: PropTypes.func.isRequired,
   order: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     symbol: PropTypes.string,

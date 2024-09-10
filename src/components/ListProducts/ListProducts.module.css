@@ -1,0 +1,31 @@
+.wrapper {
+  position: relative;
+  display: flex;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  padding: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.closeIcon {
+  width: 15px;
+}
+
+.ordersList li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.productList {
+  margin-left: 20px;
+  padding-top: 30px;
+  border: solid grey;
+}
