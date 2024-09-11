@@ -1,0 +1,11 @@
+.groupsPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.groupsImage {
+  width: 400px;
+  margin-top: 30px;
+}
