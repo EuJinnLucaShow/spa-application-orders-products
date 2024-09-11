@@ -17,9 +17,32 @@ export default function ProductsItem({ item }) {
           className={styles.imgProduct}
           alt="product image"
         />
-        <div className={styles.titleProduct}>
+        <h5 className={styles.titleProduct}>{item.title}</h5>
+        <div className={styles.typeProduct}>
           <h4>{item.type}</h4>
           <p>{item.serialNumber}</p>
+        </div>
+        <div className={styles.guaranteeProduct}>
+          <h5>Guarantee</h5>
+          <p>
+            <span>from </span>
+            {item.guarantee.start.split(" ")[0]}
+          </p>
+          <p>
+            <span>to </span>
+            {item.guarantee.end.split(" ")[0]}
+          </p>
+        </div>
+        <div className={styles.priceProduct}>
+          <h5>Price</h5>
+          <p>
+            {item.price[0].value}
+            <span> {item.price[0].symbol}</span>
+          </p>
+          <p>
+            {item.price[1].value}
+            <span> {item.price[1].symbol}</span>
+          </p>
         </div>
         <p className={styles.accessible}>Accessible</p>
         <button className={styles.trashBtn} onClick={() => setModalOpen(true)}>
@@ -37,8 +60,11 @@ export default function ProductsItem({ item }) {
 
 ProductsItem.propTypes = {
   item: PropTypes.shape({
+    title: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
     serialNumber: PropTypes.number.isRequired,
+    guarantee: PropTypes.object.isRequired,
+    price: PropTypes.array.isRequired,
   }).isRequired,
 };

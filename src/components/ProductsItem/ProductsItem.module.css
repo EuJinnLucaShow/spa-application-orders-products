@@ -1,9 +1,8 @@
 .productItem {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 5px 10px 5px 20px;
   border: solid #b0bec5;
 }
 
@@ -15,13 +14,21 @@
 }
 
 .imgProduct {
+  margin-left: 25px;
   height: 50px;
   width: 70px;
 }
 
 .titleProduct {
+  margin-left: 25px;
+  width: 200px;
+}
+
+.typeProduct {
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
+  width: 300px;
 }
 
 .titleProduct p {
@@ -29,6 +36,7 @@
 }
 
 .accessible {
+  margin-left: 60px;
   color: #d2df4f;
   font-weight: 600;
 }
@@ -38,8 +46,39 @@
   justify-content: center;
   border: none;
   background-color: transparent;
+  margin-left: 33px;
 }
 
 .trashIcon {
   width: 15px;
+}
+
+.guaranteeProduct {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.guaranteeProduct p {
+  font-size: small;
+  font-weight: 600;
+}
+
+.guaranteeProduct span {
+  font-weight: 400;
+}
+
+.priceProduct {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.priceProduct p {
+  font-size: small;
+  font-weight: 600;
+}
+
+.priceProduct span {
+  font-weight: 400;
 }
