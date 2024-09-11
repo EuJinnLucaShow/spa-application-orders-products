@@ -15,6 +15,8 @@ export default function ListProducts({
   const [currentProducts, setCarrentProducts] = useState(date);
   const [isActiveItem, setIsActiveItem] = useState(activeItem);
 
+  const activeOrder = orders.find((order) => order._id === isActiveItem);
+
   return (
     <div className={styles.wrapper}>
       <button className={styles.closeBtn} onClick={() => openProduct()}>
@@ -33,9 +35,9 @@ export default function ListProducts({
         ))}
       </ul>
 
-      <div>
+      <div className={styles.listWrapper}>
+        <h3 className={styles.listTitle}>{activeOrder.title}</h3>
         <ul className={styles.productList}>
-          <h3></h3>
           {currentProducts.map((item, index) => (
             <Products key={index} item={item} />
           ))}

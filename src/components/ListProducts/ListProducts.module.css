@@ -24,8 +24,17 @@
   margin-bottom: 10px;
 }
 
-.productList {
+.listWrapper {
   margin-left: 20px;
+  border: solid #eef2f4;
+  border-radius: 5px;
+  height: min-content;
+}
+
+.listTitle {
+  margin: 30px 25px 0 25px;
+}
+
+.productList {
   padding-top: 30px;
-  border: solid grey;
 }

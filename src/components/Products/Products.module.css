@@ -1,11 +1,45 @@
 .productItem {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 25px;
+  border-top: 1px solid #b0bec5;
 }
 
 .pointProduct {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #e8efa6;
+  background-color: #d2df4f;
+}
+
+.imgProduct {
+  height: 50px;
+  width: 70px;
+}
+
+.titleProduct {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleProduct p {
+  color: #b0bec5;
+}
+
+.accessible {
+  color: #d2df4f;
+  font-weight: 600;
+}
+
+.trashBtn {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.trashIcon {
+  width: 15px;
 }
