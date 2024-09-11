@@ -3,21 +3,21 @@ import styles from "./NavigationMenu.module.css";
 import { useState, useEffect } from "react";
 import portret from "../../assets/portrait.jpg";
 
-import Incoming from "../../pages/Incoming/Incoming";
+import Orders from "../../pages/Orders/Orders";
 import Groups from "../../pages/Groups/Groups";
 import Products from "../../pages/Products/Products";
 import Users from "../../pages/Users/Users";
 import Settings from "../../pages/Settings/Settings";
 
 const componentsMap = {
-  Incoming,
+  Orders,
   Groups,
   Products,
   Users,
   Settings,
 };
 
-const navList = ["Incoming", "Groups", "Products", "Users", "Settings"];
+const navList = ["Orders", "Groups", "Products", "Users", "Settings"];
 
 export default function NavigationMenu() {
   const location = useLocation();

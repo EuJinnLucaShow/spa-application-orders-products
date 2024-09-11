@@ -1,11 +1,16 @@
 import PropTypes from "prop-types";
 import burgermenu from "../../assets/menu.svg";
 import trashIcon from "../../assets/trash.svg";
-import styles from "./Orders.module.css";
+import styles from "./OrdersItem.module.css";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 
-export default function Orders({ order, openProduct, optionProducts, isActive }) {
+export default function OrdersItem({
+  order,
+  openProduct,
+  optionProducts,
+  isActive,
+}) {
   const [ModalOpen, setModalOpen] = useState(false);
 
   return (
@@ -53,7 +58,7 @@ export default function Orders({ order, openProduct, optionProducts, isActive })
   );
 }
 
-Orders.propTypes = {
+OrdersItem.propTypes = {
   isActive: PropTypes.func.isRequired,
   optionProducts: PropTypes.func.isRequired,
   openProduct: PropTypes.func.isRequired,

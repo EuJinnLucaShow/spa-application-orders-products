@@ -4,13 +4,13 @@ import { toast } from "react-toastify";
 
 import { selectOrders } from "../../redux/selectors";
 import { fetchOrders } from "../../redux/operations";
-import Orders from "../../components/Orders/Orders";
+import OrdersItem from "../../components/OrdersItem/OrdersItem";
 import iconBtn from "../../assets/plus.svg";
-import styles from "./Incoming.module.css";
+import styles from "./Orders.module.css";
 import ListProducts from "../../components/ListProducts/ListProducts";
 import PopUp from "../../components/PopUp/PopUp";
 
-export default function Incoming() {
+export default function Orders() {
   const dispatch = useDispatch();
   const orders = useSelector(selectOrders);
   const [openProducts, setOpenProducts] = useState(true);
@@ -37,13 +37,13 @@ export default function Incoming() {
             <img src={iconBtn} className={styles.iconBtn} alt="add button" />
           </button>
           <h3 className={styles.title}>
-            Incoming / <span>{orders.length}</span>
+            Orders / <span>{orders.length}</span>
           </h3>
         </div>
         {openProducts ? (
           <ul className={styles.ordersList}>
             {orders.map((order, index) => (
-              <Orders
+              <OrdersItem
                 key={index}
                 order={order}
                 openProduct={() => setOpenProducts(false)}

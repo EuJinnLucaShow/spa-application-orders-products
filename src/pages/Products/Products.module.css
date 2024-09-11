@@ -27,6 +27,45 @@
   margin-left: 30px;
 }
 
+.productsList {
+  width: 95%;
+  padding-bottom: 30px;
+}
+
 .productsList li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pageButton {
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: solid;
+  background-color: #8bc34a;
+  border-color: #80b34a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.active {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  border-color: #598d22;
+}
+
+.filterSelect {
+  margin-left: 30px;
+  width: 350px;
+  outline: none;
+  border-radius: 5px;
+  border: solid #b0bec5;
+  padding: 0px 20px;
+  height: 30px;
+  box-sizing: border-box;
 }
